@@ -1,5 +1,4 @@
 #BackJoon Algorithm NO.2566
-#ver.01
 N = []
 A = -1 #min 0 max99
 B,C= 0,0
@@ -15,5 +14,3 @@ for i in range(9):
 
 print(A)
 print(B, C)
-
-            
