@@ -1,10 +1,10 @@
 #BackJoon Algorithm NO.10989
 #counting sort
 import sys
-input = sys.stdin.readline
+input = sys.stdin.readline 
 
 n = int(input())
-arr = [0]*(10000 + 1) 
+arr = [0]*(10000 + 1) #make array
 
 for _ in range(n):
     arr[int(input())] += 1
