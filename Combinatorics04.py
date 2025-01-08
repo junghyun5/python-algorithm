@@ -10,6 +10,5 @@ def main():#input range N:1~10, K:0~N
     result = factorial(N)//(factorial(K)*factorial(N-K)) #Used integer division
     print(result)
     
-    
 if __name__ == '__main__':
     main()
