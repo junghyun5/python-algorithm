@@ -5,7 +5,7 @@ def factorial(N):
         return 1
     return factorial(N-1) * N #Recursive
 
-def main(): #input range N:1~10, K:0~N
+def main():#input range N:1~10, K:0~N
     N,K= map(int,input().split())
     result = factorial(N)//(factorial(K)*factorial(N-K)) #Used integer division
     print(result)
@@ -13,5 +13,3 @@ def main(): #input range N:1~10, K:0~N
     
 if __name__ == '__main__':
     main()
-        
-        
