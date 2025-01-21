@@ -1,4 +1,4 @@
-#BackJoon Algorithm NO.27433
+#BackJoon Algorithm NO.10870
 #Recursion
 import sys
 input = sys.stdin.readline
