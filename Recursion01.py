@@ -1,7 +1,6 @@
 #BackJoon Algorithm NO.27433
 #Recursion
 import sys
-from collections import Counter
 input = sys.stdin.readline
 
 def factorial(N):
