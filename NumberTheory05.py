@@ -16,7 +16,7 @@ for i in range(N):
     n = int(input())
     while True:
         if n==0 or n == 1:
-            print(2) #0,1은 미리 제외해버리네
+            print(2) # 0 and 1 are excluded in advance.
             break
         elif sos(n):
             print(n)
