@@ -1,5 +1,5 @@
 #BackJoon Algorithm NO.2485
-##Number theory
+#Number theory
 
 import sys
 import math
