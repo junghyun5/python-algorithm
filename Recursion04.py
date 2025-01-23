@@ -1,9 +1,10 @@
 #BackJoon Algorithm NO.24060
 #Recursion
 
-def merge(arr1):
+def merge(arr1, arr2):
     sorted_a = []
-    while ()
+    t = 0
+    while (arr1[])
     
 def merge_sort(arr):
     if len(arr) <= 1:
