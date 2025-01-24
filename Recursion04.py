@@ -31,7 +31,7 @@ def merge(arr1, arr2):
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
-    mid = len(arr)// 2
+    mid = (len(arr)+1)// 2
     arr1 = merge_sort(arr[:mid])
     arr2 = merge_sort(arr[mid:])
     return merge(arr1, arr2)
@@ -45,6 +45,7 @@ def main():
     #     arr.append(num)
     arr = list(map(int,input().split()))
     merge_sort(arr)
+    print(count)
     if len(count) < k:
         print(-1)
     else:
