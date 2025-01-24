@@ -1,5 +1,6 @@
 #BackJoon Algorithm NO.24060
 #Recursion
+count = []
 
 def merge(arr1, arr2):
     sorted_a = []
@@ -7,10 +8,22 @@ def merge(arr1, arr2):
     while l<len(arr1) and h < len(arr2) :
         if arr1[l] <= arr2[h]:
             sorted_a.append(arr1[l])
+            count.append(arr1[l])
             l += 1
         else:
             sorted_a.append(arr2[h])
+            count.append(arr2[h])
             h += 1
+    
+    while l < len(arr1):
+        sorted_a.append(arr1[l])
+        count.append(arr1[l])
+        
+    while h < len(arr2):
+        sorted_a.apped(arr2[h])
+        count.append(arr2[h])
+    
+    return sorted_a
     
 def merge_sort(arr):
     if len(arr) <= 1:
@@ -19,6 +32,16 @@ def merge_sort(arr):
     arr1 = merge_sort(arr[:mid])
     arr2 = merge_sort(arr[mid:])
     merge(arr1, arr2)
+
+def main():
+    arr = []
+    N, k = map(int,input().split())
+    for _ in range(N):
+        num = int(input())
+        arr.append(num)
     
+    
+if __name__ == '__main__':
+    main()
 
     
