@@ -1,16 +1,19 @@
 #BackJoon Algorithm NO.4779
 #Recursion
+import sys
+input = sys.stdin.readline
 
-def CantorianSet(set1):
-    
-    
-    
-    
+def CantorianSet(N):
+    if N == 1:
+        return '-'
+    onesd = CantorianSet(N // 3)
+    cantorset = onesd + ' ' * len(onesd) + onesd
+    return cantorset
 
 while True:
     try:
         N = int(input())
-        set1 = ['-'] * (3**N)
-        CantorianSet(set1)
+        Numb = 3**N
+        print(CantorianSet(Numb))
     except : #EOF: Stops execution when writing stops (end of file)
         break
