@@ -4,9 +4,8 @@
 def blank(N):
     arr1 = []
     for _ in range(N):
-        for _ in range(N):
-            arr1.append(" ")
-        arr1.append("\n")
+            row = " " * N
+            arr1.append(row)
     return arr1
         
 def drwStar(N):
