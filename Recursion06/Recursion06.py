@@ -16,12 +16,20 @@ def drwStar(N):
     mid = drwStar(N//3)
     arr = []
     
-    for i in range (3):
-        for j in range(3):
-            if i == 1 and j == 1:
-                arr.extend([' '* (N//3)]*(N//3))
-            else:
-                arr.extend(mid)
+    for i in mid:
+        arr.append(i*3)
+    for j in mid:
+        arr.append(j+' '*(N//3)+j) #This line is solution. Different from the other code.
+    for i in mid:
+        arr.append(i*3)
+        
+    #wrong idea 03
+    # for i in range (3):
+    #     for j in range(3):
+    #         if i == 1 and j == 1:
+    #             arr.extend([' '* (N//3)]*(N//3))
+    #         else:
+    #             arr.extend(mid)
         
     # wrong idea 02    
     # arr.append("\n")
@@ -41,8 +49,7 @@ def main():
     N = int(input())
     star = drwStar(N)
     # Join all the elements of the 'star' list into one string, inserting a newline between each element.
-    for i in range (0,len(star),N):
-        print("".join(map(str,star[i: i+N])))
+    print("\n".join(star))
     
 if __name__ == '__main__':
     main()
