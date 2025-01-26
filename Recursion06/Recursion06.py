@@ -41,7 +41,8 @@ def main():
     N = int(input())
     star = drwStar(N)
     # Join all the elements of the 'star' list into one string, inserting a newline between each element.
-    print(star)
+    for i in range (N):
+        print(star[i], end='')
     
 if __name__ == '__main__':
     main()
