@@ -7,21 +7,27 @@ def blank(N):
         for _ in range(N):
             arr1.append(" ")
         arr1.append("\n")
+    return arr1
         
 def drwStar(N):
-    arr = []
     if N == 1:
         return ("*")
+    
     mid = drwStar(N//3)
+    arr = []
+    
     for _ in range (3):
-        arr.append(mid)
-    arr.append("/n")
-    arr.append (mid)
-    arr.append (blank(N//3))
-    arr.append(mid)
-    arr.append("/n")
+        arr.extend(mid)
+    arr.append("\n")
+    
+    arr.extend(mid)
+    arr.extend(blank(N//3))
+    arr.extend(mid)
+    arr.append("\n")
+    
     for _ in range (3):
-        arr.append(mid)
+        arr.extend(mid)
+        
     return arr
 
 def main():
@@ -29,4 +35,4 @@ def main():
     print("".join(drwStar(N)))
     
 if __name__ == '__main__':
-    main
+    main()
