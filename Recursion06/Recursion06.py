@@ -19,6 +19,7 @@ def drwStar(N):
     for _ in range (3):
         arr.extend(mid)
     arr.append("\n")
+    # Use extend instead of append to add each element of mid directly to arr
     
     arr.extend(mid)
     arr.extend(blank(N//3))
