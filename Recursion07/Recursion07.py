@@ -1,5 +1,7 @@
 #BackJoon Algorithm NO.11729
 #Recursion
+import sys
+input = sys.stdin.readline
 
 def Hanoi(N , start, end):
     if N == 1:
