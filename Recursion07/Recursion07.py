@@ -10,4 +10,9 @@ def Hanoi(N , start, end):
     Hanoi(N-1, 6 -start -end, end)
     
 
+def main():
+    N = int(input())
+    Hanoi(N,1,3)
     
+if __name__ == '__main__':
+    main()
