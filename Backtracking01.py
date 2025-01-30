@@ -2,8 +2,12 @@
 #Backtracking 
 
 #Using the DFS
+def DFS():
+    
+    
 
 N,M = map(int,input().split())
+
 
 
 
