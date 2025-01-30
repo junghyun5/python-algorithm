@@ -11,6 +11,7 @@ def DFS(arr):
             continue
         visited[i] = True
         arr.append(i)
+        DFS()
         
 
 N,M = map(int,input().split())
