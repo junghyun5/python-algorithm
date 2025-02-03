@@ -14,7 +14,7 @@ def DFS(Num):
         arr.append(i+1) #Put the number in the array
         if arr[0] == N:
             return
-        DFS(Num+1) #find the next digit
+        DFS(i+1) #find the next digit
         #Don't put the DFS(arr), it doesn't need it. 
         arr.pop() #start a new line, next i.
         visited[i] = False #reset
