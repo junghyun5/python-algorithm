@@ -2,22 +2,20 @@
 #Backtracking 
 
 #Using the DFS
-def DFS(Num):
+def DFS(Num): # (1,3), (3,1) are same. 
     if len(arr) == M: #make a line until M
         print(' '.join(map(str,arr)))
-        return
-    #Pay attention to the order 
+        return 
     for i in range(Num,N):
-        if visited[i] == True: #prevent the same number
+        if visited[i] == True: 
             continue
-        visited[i] = True #change to the True
-        arr.append(i+1) #Put the number in the array
+        visited[i] = True 
+        arr.append(i+1) 
         if arr[0] == N:
             return
-        DFS(i+1) #find the next digit
-        #Don't put the DFS(arr), it doesn't need it. 
-        arr.pop() #start a new line, next i.
-        visited[i] = False #reset
+        DFS(i+1)  #Add a variable to prevent repetition.
+        arr.pop() 
+        visited[i] = False 
         
         
 
