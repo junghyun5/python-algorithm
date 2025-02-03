@@ -5,7 +5,7 @@ def DFS():
     if len(arr) == M:
         print(' '.join(map(str,arr)))
         return
-    for i in range(N):  
+    for i in range(N): #Same number possible
         arr.append(i+1)
         DFS()  
         arr.pop()
