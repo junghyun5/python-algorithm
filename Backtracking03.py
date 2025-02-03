@@ -6,8 +6,11 @@ def DFS():
         print(' '.join(map(str,arr)))
         return
     for i in range(N):  
-          
+        arr.append(i+1)
+        DFS()  
+        arr.pop()
 
 
 N,M = map(int,input().split())
 arr = []
+DFS()
