@@ -11,8 +11,6 @@ def DFS(Num): # (1,3), (3,1) are same.
             continue
         visited[i] = True 
         arr.append(i+1) 
-        if arr[0] == N:
-            return
         DFS(i+1)  #Add a variable to prevent repetition.
         arr.pop() 
         visited[i] = False 
