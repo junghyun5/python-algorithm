@@ -1,13 +1,14 @@
 #BackJoon Algorithm NO.15652
 #Backtracking 
 
+# A sequence A of length K is said to be non-decreasing if A1 ≤ A2 ≤ ... ≤ AK-1 ≤ AK.
 def DFS(start):
     if len(arr) == M:
         print(' '.join(map(str,arr)))
         return
-    for i in range(N): #Same number possible
+    for i in range(start,N): #Same number possible
         arr.append(i+1)
-        DFS(i)  
+        DFS(i+1)  
         arr.pop()
 
 
