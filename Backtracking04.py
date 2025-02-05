@@ -8,7 +8,7 @@ def DFS(start):
         return
     for i in range(start,N): #Same number possible
         arr.append(i+1)
-        DFS(i)  
+        DFS(i) #include the last number
         arr.pop()
 
 
