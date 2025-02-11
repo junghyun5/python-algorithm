@@ -15,6 +15,14 @@ def queen(i, col):
             queen(i+1,col)
     
 def check(i,col):
+    k = 1
+    check1 = True
+    while(k<1 and check1):
+        if(col[i] == col[k] or abs(col[i] - col[k]) == (i-k)):
+            check1 = False
+        k += 1
+    return check1
     
-
 N = int(input())
+col = [0] * (N+1)
+queen(0,col)
