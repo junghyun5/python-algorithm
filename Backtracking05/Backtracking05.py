@@ -2,4 +2,6 @@
 #Backtracking 
 
 #divided into two parts.
+def 
+
 N = int(input())
