@@ -5,8 +5,6 @@
 def queen(i, col):
     global count
     n = len(col) - 1
-    # col = [0,0,0, ... ,0]
-    #first one is 
     if(check(i,col)):
         if(i == n):
             count += 1
