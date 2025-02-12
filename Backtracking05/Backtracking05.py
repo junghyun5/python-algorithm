@@ -17,7 +17,7 @@ def queen(i, col):
 def check(i,col):
     k = 1
     check1 = True
-    while(k<1 and check1):
+    while(k< i and check1):
         if(col[i] == col[k] or abs(col[i] - col[k]) == (i-k)):
             check1 = False
         k += 1
