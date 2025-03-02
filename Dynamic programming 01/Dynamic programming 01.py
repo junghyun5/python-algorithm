@@ -1,7 +1,7 @@
 #BackJoon Algorithm NO.24416
 #Dynamic programming
 
-n = int(input()) #wow
+n = int(input())
 
 f1, f2 = 0, 0
 def fib(n):
