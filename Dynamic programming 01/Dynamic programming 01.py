@@ -3,9 +3,9 @@
 
 n = int(input())
 
-f1, f2 = 0, 0
+f1, f2 = 0, 0 #number of repetitions. 
 def fib(n):
-    global f1
+    global f1 
     
     if n == 1 or n == 2:
         f1 += 1
