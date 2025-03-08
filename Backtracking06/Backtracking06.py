@@ -6,3 +6,5 @@ def row(a,n):
         if n == sudoku[a][i]:
             return False
     return True
+
+#here
