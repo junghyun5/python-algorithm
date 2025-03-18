@@ -7,4 +7,3 @@ def row(a,n):
             return False
     return True
 
-#here
